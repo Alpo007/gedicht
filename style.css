@@ -1,0 +1,15 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+p{
+    font-size: 2rem;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
