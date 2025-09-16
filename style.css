@@ -1,32 +1,38 @@
 *{
     font-family: 'Times New Roman', Times, serif;
-    text-align: center;
     line-height: 1.6;
 }
 
 #firstLetter{
-    font-size: 8rem;
+    font-size: clamp(8rem, 40vw, 30rem);
     font-weight: bold;
-    float: left;
     line-height: 0.9;
+    float: left;
     margin-right: 8px;
 }
 
 #end{
-    font-size: 2rem;
+    font-size: clamp(2rem, 10vw, 8rem);
     font-weight: bold;
+    white-space: nowrap;
+    line-height: 2.2;
 }
 
-p{
-    font-size: 1.6rem;
-    text-align: justify;
-    margin: 0 0 0.5em 0;
+.text{
+    font-size: clamp(0.5rem, 4vw, 3rem);
     padding-right: 10%;
     padding-left: 10%;
+    letter-spacing: 0.02em;
 }
 
-@media only screen and (max-device-width: 480px) and (orientation: portrait) {
-    p{
-        font-size: 1rem;
-    }
+@media screen and (min-width: 650px) {
+    .text{
+        margin-top: -50px;
+    } 
+}
+
+@media screen and (max-width: 650px) {
+    .text{
+        margin-top: -30px;
+    } 
 }
