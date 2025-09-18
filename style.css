@@ -25,6 +25,26 @@
     letter-spacing: 0.02em;
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1.2rem, 4vw, 8rem);
+    margin-bottom: 5%;
+}
+
+.email{
+    text-decoration: none;
+    padding: 1%;
+    border: black 2px solid;
+    box-shadow: 1px 2px 8px;
+    color: black;
+}
+
+.email:hover{
+    background-color: #CCC;
+}
+
 @media screen and (min-width: 650px) {
     .text{
         margin-top: -50px;
